@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    
     <title>RPS</title>
 </head>
 
@@ -36,12 +35,12 @@
                 </p>
             </div>
             <div class="content">
-                <form action="#" method="post" class="input_positions">
+                <form id="myform" action="#" method="post" class="input_positions" onsubmit=" return verifyPasswords()">
                     <p class="lets">Let's do this!</p>
                     <fieldset>
                         <div class="input" style="float:left;margin-right:64px;">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" name="first_name" id="first_name">
+                            <input type="text" name="first_name" id="first_name" required>
                         </div>
                         <div class="input" style="float:left;">
                             <label for="last_name">LAST NAME</label>
@@ -50,7 +49,7 @@
                         <br style="clear:both;" />
                         <div class="input" style="float:left;margin-right:64px;">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="input" style="float:left;">
                             <label for="phone_number">PHONE NUMBER</label>
@@ -59,16 +58,16 @@
                         <br style="clear:both;" />
                         <div class="input" style="float:left;margin-right:64px;">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" minlength="4" maxlength="10" required>
                         </div>
                         <div class="input" style="float:left;">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <input type="password" name="confirm_password" id="confirm_password" required>
                         </div>
                     </fieldset>
                 </form>
                 <div class="bottom">
-                    <button style="display:block;" id="button_submit" type="submit">Create Account</button>
+                    <button style="display:block;" id="button_submit" form="myform" type="submit">Create Account</button>
                     <div class="final_text">
                         <span class="bottom_text"> Already have an account?</span>
                         <a class="bottom_link" href="">Log in</a>

@@ -1,0 +1,166 @@
+:root{
+    --space: 48px;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow-y: scroll;
+}
+
+label, input{
+    display: block;
+}
+
+.lside{
+    display: flex;
+    flex-direction: column;
+    background-image: url(.//assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-color: rgb(15, 87, 0);
+    float: left;
+    width: 35%;
+    height: 100vh;
+    text-align: center;
+}
+
+.img_div{
+    position: relative;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.img{
+    width: 100px;
+    height: 140px; 
+}
+
+.img_text{
+    font-family: "Norse-Bold";
+    color: #FFFFFF;
+    font-size: 5rem;
+}
+
+.credits{
+    margin-top: auto;
+    padding: 1rem;
+    vertical-align:bottom;
+    color: #FFFFFF;  
+}
+
+.credits_link{
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/*Right side*/
+
+.rside{
+    background-color: #F2F2F2;
+    float: right;
+    width: 65%;
+    overflow: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*TEXT RIGHT SIDE*/
+
+.rside .text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: var(--space);
+    padding-right: 16px;
+}
+
+/*FORMS*/
+
+.rside .content .lets{
+    font-weight: 600;
+    padding-top: 16px;
+    font-size: 1.5rem;
+}
+
+fieldset{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+input{
+    width: 20vw;
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: 1px #F2F2F2 solid;
+}
+
+input:focus{
+    outline: none;
+    outline: 1px solid #0080ff;
+    box-shadow: 1px 1px 3px #0080ff;
+    border: 0px;
+}
+
+label{
+    font-size: 0.8rem;
+}
+
+.rside .content .input_positions{
+    padding-left: var(--space);
+    padding-bottom: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px #E0E1E2;
+}
+
+.input{
+    padding-bottom: 18px;
+}
+
+/*BOTTOM PART WITH BUTTON*/
+
+.rside .content .final_text{
+    padding-top: 16px;
+}
+
+.rside .content .bottom{
+    padding-top: 32px;
+    padding-left:var(--space);
+}
+
+
+#button_submit{
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    padding: 12px 48px;
+    border-radius: 6px;
+    border:0;
+}
+
+.bottom_text{
+    font-weight: 500;
+}
+
+.bottom_link{
+    color:#596D48;
+    font-weight: bold;
+}
+
+.bottom_link:link{
+    text-decoration: none;
+}
